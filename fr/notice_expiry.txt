@@ -1,4 +1,4 @@
-Hi {{ display_name }},
+Bonjour {{ display_name }},
 
 Votre compte expirera le {{ expiration_ts|format_ts("%d-%m-%Y") }}. Cela signifie que vous perdrez l'accès à votre compte après cette date.
 
