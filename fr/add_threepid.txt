@@ -1,0 +1,6 @@
+Une demande d'ajout d'adresse électronique à votre compte Watcha a été reçue. Si vous en êtes à l'origine,
+cliquez sur le lien ci-dessous pour confirmer l'opération :
+
+{{ link }}
+
+Dans le cas contraire, vous pouvez sans crainte ignorer cet e-mail.

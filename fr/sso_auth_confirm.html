@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Confirmation d'identité</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <style type="text/css">
+            {% include "sso.css" without context %}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Confirmez qu'il s'agit de vous pour continuer</h1>
+            <p>
+                Une application essaie de {{ description }}. Pour confirmer l'opération
+                autorisez à nouveau votre compte avec l'authentification unique.
+            </p>
+            <p><strong>
+                Si vous ne vous y attendiez pas, votre compte est peut-être compromis.
+            </strong></p>
+        </header>
+        <main>
+            <a href="{{ redirect_url }}" class="primary-button">
+                Continuer avec {{ idp.idp_name }}
+            </a>
+        </main>
+        {% include "sso_footer.html" without context %}
+    </body>
+</html>

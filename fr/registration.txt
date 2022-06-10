@@ -1,0 +1,8 @@
+Bonjour,
+
+Une demande de création de compte Watcha a été reçue pour cette adresse électronique.
+Si vous en êtes à l'origine, cliquez sur le lien ci-dessous pour confirmer l'opération :
+
+{{ link }}
+
+Dans le cas contraire, vous pouvez sans crainte ignorer cet e-mail.

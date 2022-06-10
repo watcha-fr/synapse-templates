@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Authentification réussie</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <style type="text/css">
+            {% include "sso.css" without context %}
+        </style>
+        <script>
+            if (window.onAuthDone) {
+                window.onAuthDone();
+            } else if (window.opener && window.opener.postMessage) {
+                window.opener.postMessage("authDone", "*");
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>L'authentification a réussi</h1>
+            <p>
+                Nous sommes maintenant assurés qu'il s'agit de vous, vous pouvez fermer cette fenêtre et retourner sur l'application.
+            </p>
+        </header>
+        {% include "sso_footer.html" without context %}
+    </body>
+</html>

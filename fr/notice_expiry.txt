@@ -1,0 +1,7 @@
+Hi {{ display_name }},
+
+Votre compte expirera le {{ expiration_ts|format_ts("%d-%m-%Y") }}. Cela signifie que vous perdrez l'accès à votre compte après cette date.
+
+Pour prolonger la validité de votre compte, veuillez cliquer sur le lien ci-dessous (ou le copier et le coller dans un nouvel onglet du navigateur) :
+
+{{ url }}

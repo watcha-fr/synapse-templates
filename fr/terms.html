@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Authentification</title>
+<meta name='viewport' content='width=device-width, initial-scale=1,
+    user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+<link rel="stylesheet" href="/_matrix/static/client/register/style.css">
+</head>
+<body>
+<form id="registrationForm" method="post" action="{{ myurl }}">
+    <div>
+        {% if error is defined %}
+            <p class="error"><strong>Erreur: {{ error }}</strong></p>
+        {% endif %}
+        <p>
+            Veuillez cliquer sur le bouton ci-dessous si vous acceptez la
+            <a href="{{ terms_url }}">politique de confidentialité du service.</a>
+        </p>
+        <input type="hidden" name="session" value="{{ session }}" />
+        <input type="submit" value="Agree" />
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Compte SSO désactivé</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <style type="text/css">
+            {% include "sso.css" without context %}
+        </style>
+    </head>
+    <body class="error_page">
+        <header>
+            <h1>Votre compte a été désactivé</h1>
+            <p>
+                <strong>Aucun compte trouvé</strong>
+            </p>
+            <p>
+                Votre compte a peut-être été désactivé par l'administrateur du serveur.
+                Vous pouvez essayer de créer un nouveau compte ou contacter l'administrateur du serveur.
+                du serveur.
+            </p>
+        </header>
+        {% include "sso_footer.html" without context %}
+    </body>
+</html>
