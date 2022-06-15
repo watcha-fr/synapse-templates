@@ -16,7 +16,7 @@ Paramètres de connexion :
 
       Espace de travail :
 
-            {{ server }}
+            {{ workspace }}
 
 
 

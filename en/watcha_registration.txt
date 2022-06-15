@@ -16,7 +16,7 @@ Connection settings:
 
       Workspace:
 
-            {{ server }}
+            {{ workspace }}
 
 
 
