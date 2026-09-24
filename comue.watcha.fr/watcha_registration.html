@@ -1,0 +1,91 @@
+{# Template personnalisé ComUE / Université de Lyon, validé par le client à la mise en place.
+   Source : dépôt synapse-templates, dossier comue.watcha.fr/ — le déploiement Synapse
+   le recopie par-dessus fr/ ; toute modification faite sur le serveur sera écrasée. -#}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>{{ title }}</title>
+    </head>
+    <body style="font-family: sans-serif; max-width: 600px; padding: 1em">
+        <p>Bonjour,</p>
+        <p>Un utilisateur de l'Université de Lyon vous invite à rejoindre la suite collaborative Watcha.</p>
+
+        <br />
+
+        <h2>Méthode de connexion recommandée</h2>
+
+        <table
+            style="
+                width: 100%;
+                border: 2px solid #333333;
+                border-radius: 0.5rem;
+                border-spacing: 0;
+                background-color: #f5f5f5;
+            "
+            width="100%"
+            cellpadding="14px"
+            bgcolor="#f5f5f5"
+        >
+            <tbody>
+                <tr>
+                    <td>
+                        <p style="margin-top: 0">
+                            <b>Si votre établissement est affilié à la Fédération d’identité Education Recherche</b>
+                            (RENATER), sur la page de connexion choisissez « Connexion Renater ».
+                        </p>
+                        <p style="margin-bottom: 0">
+                            Si vous n’avez pas la possibilité de vous connecter via Renater, choisissez « Connexion Proconnect ».
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+        <br />
+
+        <h3>Connexion avec identifiant/mot de passe</h3>
+
+        <p>Cette méthode est réservée aux utilisateurs pour lesquels la connexion via Renater ou ProConnect est impossible.</p>
+
+        <table
+            style="
+                width: 100%;
+                padding: 1em 1em 0 1em;
+                border: 1px solid black;
+                border-radius: 0.25rem;
+                border-spacing: 0;
+            "
+            width="100%"
+            cellpadding="10px"
+        >
+            <tbody>
+                <tr>
+                    <td>
+                        <b>Identifiant</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2em">{{ identifier | safe }}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Mot de passe</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2em">Pour définir votre mot de passe, cliquez sur <b>"Mot de passe oublié"</b> lors de votre première connexion.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Espace de travail</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2em">{{ workspace | safe }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
