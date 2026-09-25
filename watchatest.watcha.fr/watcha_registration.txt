@@ -1,0 +1,30 @@
+Bonjour,
+
+Un utilisateur de l'Université de Lyon vous invite à rejoindre la suite collaborative Watcha.
+
+
+
+MÉTHODE DE CONNEXION RECOMMANDÉE
+
+      Si votre établissement est affilié à la Fédération d'identité Education Recherche (RENATER),
+      sur la page de connexion choisissez « Connexion Renater ».
+
+      Si vous n'avez pas la possibilité de vous connecter via Renater, choisissez « Connexion Proconnect ».
+
+
+
+Connexion avec identifiant/mot de passe :
+
+Cette méthode est réservée aux utilisateurs pour lesquels la connexion via Renater ou ProConnect est impossible.
+
+      Identifiant :
+
+            {{ identifier }}
+
+      Mot de passe :
+
+            Pour définir votre mot de passe, cliquez sur "Mot de passe oublié" lors de votre première connexion.
+
+      Espace de travail :
+
+            {{ workspace }}
