@@ -28,3 +28,9 @@ Cette méthode est réservée aux utilisateurs pour lesquels la connexion via Re
       Espace de travail :
 
             {{ workspace }}
+
+
+
+Connexion depuis votre navigateur :
+
+      {{ login_url }}

@@ -7,7 +7,8 @@ puis ce dossier par-dessus : un fichier présent ici remplace son homologue de `
 - `watcha_registration.html` / `.txt` : mail d'invitation validé par le client —
   « Un utilisateur de l'Université de Lyon », connexion recommandée par Renater ou
   ProConnect, **aucun mot de passe affiché** (« Mot de passe oublié » à la
-  première connexion).
+  première connexion), puis lien de connexion depuis le navigateur (bouton
+  Watcha + `login_url`).
 
 Toute modification faite directement sur le serveur est écrasée au déploiement
 suivant : modifier ici. Penser à répercuter ici une évolution du mail standard
